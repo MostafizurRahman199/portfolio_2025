@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Article",
+        "imageURL": "https://www.teamly.com/blog/wp-content/uploads/2022/02/Project-Management-Blogs.png",
+        "githubLink": "https://article24.netlify.app",
+        "description": "A Full stack Firebased Blog Project where anyone can create post, like, comment, Login, Bookmark."
+    },
+    {
+        "title": "DisCount Pro",
+        "imageURL": "https://cdn.prestahero.com/1188-home_default/prestashop-promotion-and-discount.webp",
+        "githubLink": "https://discount-pro-by-mostafiz.netlify.app",
+        "description": "With Firebase Auth a discount pro project where I used animation, react router dom, etc."
+    },
+    {
+        "title": "DentaCare",
+        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjv4eCujAyEgJ2hykfu4QVjkKjiIRgD8-7IM2Q25w1_c4PWFgybKMYf5cox2h76aBNRIA&usqp=CAU",
+        "githubLink": "https://dentacare24.netlify.app",
+        "description": "DentaCare offers top-quality dental services to ensure your smile stays healthy and bright."
+    },
+    {
+        "title": "Gadget Haven",
+        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEVtcbKnrwyva48Ekxg0TMnzYz9xrtHUppuQ&s",
+        "githubLink": "https://react-gadget-heaven-mostafiz.netlify.app",
+        "description": "Gadget Haven is your one-stop destination for the latest and greatest in tech products."
+    },
+    {
+        "title": "Boi Poka",
+        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShZMBqy5BslteiLV_pOFYlgrkTgM3SzY0s7w&s",
+        "githubLink": "https://react-boi-poka-mostafiz.netlify.app",
+        "description": "Boi Poka is a cozy corner for book lovers, where stories come alive through pages and words."
+    },
+    {
+        "title": "Cricket World",
+        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrFAbJEToFObNmK6cI_hjanc3AcxylqDMAMg&s",
+        "githubLink": "https://cricket-world-react-mostafiz.netlify.app",
+        "description": "Cricket World is the ultimate hub for everything related to the sport of cricket."
+    },
+    {
+        "title": "Knowledge Cafe",
+        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc_OcH5G-kyiiw2CiYSPBYPIhVjRpgQ0HB-Q&s",
+        "githubLink": "https://react-knowledge-cafe-mostafiz.netlify.app",
+        "description": "Knowledge Cafe is a vibrant space for curious minds to explore, learn, and share ideas."
+    }
+]

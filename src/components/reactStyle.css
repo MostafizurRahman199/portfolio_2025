@@ -1,0 +1,87 @@
+/* ReactProject.css */
+.project-card {
+    background-color: #1A1A1D;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Prevent the scaled-up card from overflowing */
+  }
+  
+  .slick-center .project-card {
+    transform: scale(1.05);  /* Scale the center card */
+    transition: transform 0.3s ease;
+  }
+  
+  .slick-prev, .slick-next {
+    /* background-color: #FF5C8D; */
+    border-radius: 50%;
+    padding: 10px;
+    color: #E5E5E5;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    /* background-color: #E04E6D; */
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    font-size: 20px;
+  }
+  
+  .slick-track {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slick-slide {
+    transition: transform 0.3s ease;
+  }
+  
+  .slick-slide:not(.slick-center) .project-card {
+    transform: scale(0.9);  /* Scale down the non-center cards */
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;  /* Add some horizontal padding to prevent cut-off */
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .project-card h3 {
+    font-size: 18px;
+    color: #FF5C8D;
+  }
+  
+  .project-card p {
+    color: #E5E5E5;
+  }
+  
+  .project-card a {
+    color: #FF5C8D;
+  }
+  
+  .slick-dots {
+    bottom: -30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slick-dots li button {
+    background-color: #FF5C8D;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #E04E6D;
+  }
+  

@@ -1,0 +1,151 @@
+[
+  {
+    "title": "Coffee House",
+    "imageURL": "https://c8.alamy.com/comp/W4N9H1/vector-logo-for-coffee-house-W4N9H1.jpg",
+    "description": "A comprehensive Full Stack Express and Node.js project named Coffee House, where users can perform Create, Read, Update, and Delete (CRUD) operations seamlessly. This project also integrates user authentication to ensure secure access.",
+    "liveLink": "https://coffee-house-f229b.web.app/",
+    "githubLink_client_side": "https://github.com/MostafizurRahman199/coffee_house_client",
+    "githubLink_server_side": "https://github.com/MostafizurRahman199/coffee_house_server_side",
+    "details": {
+      "techStack": ["React", "Node.js", "Express", "MongoDB", "Firebase"],
+      "briefDescription": "A full-stack application focusing on CRUD operations and user authentication for managing coffee shop services.",
+      "detailedDescription": {
+        "layout": {
+          "navbar": [
+            "Website name/logo",
+            "Home, Menu, Add Coffee (Protected), Update Coffee (Protected)",
+            "Login/Register (Conditional)",
+            "User Avatar (Profile photo with name tooltip)",
+            "Logout (for logged-in users)"
+          ],
+          "homePage": [
+            "Dynamic banner showcasing coffee collections",
+            "Popular coffee items section",
+            "Quick links to manage coffee inventory"
+          ],
+          "footer": ["Contact details, social media links, and site map"]
+        },
+        "keyPages": {
+          "loginPage": "Email/password authentication with Firebase.",
+          "registerPage": "User registration for secure access.",
+          "addCoffeePage": "Allows users to add coffee details (name, price, description, image).",
+          "updateCoffeePage": "Enables users to update existing coffee details.",
+          "menuPage": "Displays all available coffee items dynamically."
+        },
+        "additionalFeatures": {
+          "404Page": "Custom 'Not Found' page for invalid URLs.",
+          "loadingSpinner": "Indicates data loading status.",
+          "themeToggle": "Dark/Light theme toggle.",
+          "crudOperations": "Full CRUD functionality for managing coffee items."
+        }
+      },
+      "challengesFaced": [
+        "Integrating Firebase authentication with React and Express.",
+        "Optimizing backend APIs for faster data retrieval."
+      ],
+      "improvements": [
+        "Adding a real-time order management system.",
+        "Enhancing UI for better customer experience."
+      ]
+    }
+  },
+  {
+    "title": "Humanity",
+    "imageURL": "https://familypromisecarteret.org/wp-content/uploads/2015/03/url-14.jpeg",
+    "description": "This project is a user-friendly platform for volunteer management, enabling users to create, update, and delete volunteer need posts.",
+    "liveLink": "https://humanity-by-mostafiz.netlify.app/",
+    "githubLink_client_side": "https://github.com/MostafizurRahman199/volunteer-management-humanity-client-side",
+    "githubLink_server_side": "https://github.com/MostafizurRahman199/volunteer-management-humanity-server-side",
+    "details": {
+      "techStack": ["React", "Node.js", "Express", "MongoDB", "Firebase"],
+      "briefDescription": "A volunteer management platform for creating and fulfilling volunteer needs.",
+      "detailedDescription": {
+        "layout": {
+          "navbar": [
+            "Website name/logo",
+            "Home, Volunteer Posts, Add Post (Protected), My Posts (Protected)",
+            "Login/Register (Conditional)",
+            "User Avatar (Profile photo with name tooltip)",
+            "Logout (for logged-in users)"
+          ],
+          "homePage": [
+            "Dynamic banner highlighting volunteer opportunities",
+            "Featured posts section showcasing urgent volunteer needs",
+            "Easy navigation to add or manage posts"
+          ],
+          "footer": ["Social media links, contact details, and site credits"]
+        },
+        "keyPages": {
+          "loginPage": "Email/password authentication with Firebase.",
+          "registerPage": "Allows new users to sign up.",
+          "addPostPage": "Enables users to create a new volunteer post with title, description, and image.",
+          "volunteerPostsPage": "Displays all volunteer posts with search and filter options.",
+          "myPostsPage": "Shows all posts created by the logged-in user with update and delete options."
+        },
+        "additionalFeatures": {
+          "404Page": "Custom 'Not Found' page for invalid URLs.",
+          "loadingSpinner": "Displays loading state for data-heavy pages.",
+          "themeToggle": "Dark/Light theme toggle.",
+          "notifications": "Real-time notifications for new volunteer opportunities."
+        }
+      },
+      "challengesFaced": [
+        "Designing an intuitive UI for managing volunteer needs.",
+        "Implementing efficient user role management."
+      ],
+      "improvements": [
+        "Adding a feature to track volunteer responses.",
+        "Integrating calendar functionality for scheduling events."
+      ]
+    }
+  },
+  {
+    "title": "Job Seeker",
+    "imageURL": "https://img.freepik.com/premium-vector/job-seeker-illustration-concept_225067-151.jpg",
+    "description": "A Full Stack Job-Seeking Website designed to streamline the process of connecting job seekers with potential employers.",
+    "liveLink": "https://job-seeker-d51b4.web.app/",
+    "githubLink_client_side": "https://github.com/MostafizurRahman199/job_seeker",
+    "githubLink_server_side": "https://github.com/MostafizurRahman199/job_seeker_server_side",
+    "details": {
+      "techStack": ["React", "Node.js", "Express", "MongoDB", "Firebase"],
+      "briefDescription": "A job-seeking platform connecting employers with potential candidates.",
+      "detailedDescription": {
+        "layout": {
+          "navbar": [
+            "Website name/logo",
+            "Home, Jobs, Post Job (Protected), My Jobs (Protected)",
+            "Login/Register (Conditional)",
+            "User Avatar (Profile photo with name tooltip)",
+            "Logout (for logged-in users)"
+          ],
+          "homePage": [
+            "Featured job openings displayed dynamically",
+            "Job categories for quick navigation",
+            "Search bar for finding specific jobs"
+          ],
+          "footer": ["Social media links, company information, and contact details"]
+        },
+        "keyPages": {
+          "loginPage": "Email/password authentication with Firebase.",
+          "registerPage": "Allows new users to sign up.",
+          "postJobPage": "Enables employers to create job postings.",
+          "jobDetailsPage": "Displays detailed job information with an 'Apply Now' option.",
+          "myJobsPage": "Lists jobs posted by the logged-in employer with options to update or delete."
+        },
+        "additionalFeatures": {
+          "404Page": "Custom 'Not Found' page for invalid URLs.",
+          "loadingSpinner": "Indicates data loading state.",
+          "sortingAndFiltering": "Filter jobs by location, experience, and skills."
+        }
+      },
+      "challengesFaced": [
+        "Creating an efficient filtering and sorting mechanism for job searches.",
+        "Ensuring data consistency between employer and job seeker interactions."
+      ],
+      "improvements": [
+        "Integrating video interview scheduling functionality.",
+        "Enhancing the search algorithm for better accuracy."
+      ]
+    }
+  }
+]

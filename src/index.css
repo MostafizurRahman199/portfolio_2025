@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+
+
+.font_heading{
+  font-family: "Ysabeau SC", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+.font_body {
+  font-family: "Comfortaa", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+.banner{
+    background-image: url('./Hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.font_1{
+    font-family: "Raleway", sans-serif;
+}
+
+.font_2{
+ 
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+     
+      
+}
+.bg{
+    background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+}
+.bg2{
+    background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+}
+
+.bg2hover{
+    transition:all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    
+}
+
+.bg2hover:hover{
+    background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    transition:all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.bg3{
+    background: linear-gradient(90deg, hsla(279, 83%, 70%, 1) 0%, hsla(321, 90%, 70%, 1) 100%);
+}
+
+.bgColor:hover{
+    /* background: linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%); */
+
+    background: linear-gradient(90deg, hsla(279, 83%, 70%, 1) 0%, hsla(321, 90%, 70%, 1) 100%);
+}
+
+.font_bold{
+  
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+   
+      
+}
+
+
+.header {
+    background: linear-gradient(to right, #40c9ff, #e81cff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 100%; /* Ensure the gradient covers the text */
+    animation: gradientSwap 3s ease infinite; /* Animation for gradient swap */
+  }
+  
+.header2 {
+    background: linear-gradient(to right, #046890, #ac05be);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 100%; /* Ensure the gradient covers the text */
+        /* Animation for gradient swap */
+  }
+  
+  /* Default font size for large screens */
+  .header {
+    font-size: 5rem;
+  }
+  
+  /* Adjust font size for medium screens */
+  @media (max-width: 1024px) {
+    .header {
+      font-size: 4rem;
+    }
+  }
+  
+  /* Adjust font size for small screens */
+  @media (max-width: 768px) {
+    .header {
+      font-size: 3rem;
+    }
+  }
+  
+  /* Adjust font size for extra small screens */
+  @media (max-width: 480px) {
+    .header {
+      font-size: 2rem;
+    }
+  }
+  
+  @keyframes gradientSwap {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+
+  /* Gradient border effect */
+  .gradient-border {
+    background: linear-gradient(to right, #d7e9f1, #1cb0ca); /* Initial gradient background */
+    padding: 10px; /* Padding to simulate border thickness */
+    border-radius: 8px; /* Border radius for rounded corners */
+    animation: gradientSwap1 10s linear infinite; /* Animation for gradient color swap */
+  }
+  
+  .gradient-border .content {
+    background: white; /* Background color of the inner content */
+    padding: 20px; /* Padding inside the content */
+    border-radius: 8px; /* Ensure border-radius matches outer div */
+  }
+  
+  /* Keyframes for gradient color swap animation */
+  @keyframes gradientSwap1 {
+    0% {
+      background: linear-gradient(to right, #60bbe2, #d76ae3);
+    }
+    50% {
+      background: linear-gradient(to right, #bc5cc7, #56a8c8); /* Swap colors at 50% */
+    }
+    100% {
+      background: linear-gradient(to right, #5ca5c0, #b653c1); /* Return to original colors */
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .header {
+      font-size: 4rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      font-size: 2rem;
+    }
+  }
+  
+
+  @keyframes gradientSwap {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+
+
+
+
+  /* Gradient border effect */
+  /* Marquee Animation */
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite; /* Increased duration to slow down */
+}
+
+.pause-marquee {
+  animation-play-state: paused !important;
+}
