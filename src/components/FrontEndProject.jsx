@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const FrontEndProject = () => {
   const [projects, setProjects] = useState([]);
@@ -9,6 +11,10 @@ const FrontEndProject = () => {
     fetch("./basic_frontend.json")
       .then((response) => response.json())
       .then((data) => setProjects(data));
+  }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true }); // AOS initialization
   }, []);
 
   // Show more projects
@@ -27,6 +33,7 @@ const FrontEndProject = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {projects.slice(0, visibleProjects).map((project, index) => (
           <div
+            data-aos="zoom-in"
             key={index}
             className="bg-[#1A1A1D] p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
           >
@@ -54,7 +61,7 @@ const FrontEndProject = () => {
         <div className="text-center mt-8">
           <button
             onClick={showMoreProjects}
-            className="bg-[#FF5C8D] text-white py-2 px-6 rounded-full hover:bg-[#E04E6D] transition-colors"
+            className=" text-white py-2 px-6 rounded-full bg-gradient-to-r from-[#c772f0] to-[#ff5c8d] hover:from-[#ff5c8d] hover:to-[#c772f0]  transition-colors"
           >
             Show More Projects
           </button>

@@ -1,135 +1,10 @@
-// import React, { useEffect, useState } from "react";
 
-// const FullStackProjects = () => {
-//   const [projects, setProjects] = useState([]);
-//   const [visibleProjects, setVisibleProjects] = useState(9); // Number of projects to show initially
-
-//   useEffect(() => {
-//     // Fetch the JSON file
-//     fetch("./fullstack.json")
-//       .then((response) => response.json())
-//       .then((data) => setProjects(data));
-//   }, []);
-
-//   return (
-//    <div className="bg-[#111111]">
-//      <div className="w-full  py-10 px-6 md:w-10/12 mx-auto">
-//       <h2 className="text-4xl md:text-5xl text-white text-center font-bold mb-8">
-//         Full-Stack <span className="text-[#ff5c8d]">Projects</span>
-//       </h2>
-
-//       <div className="space-y-8">
-//         {projects.slice(0, visibleProjects).map((project, index) => (
-//           <div
-//             key={index}
-//             className="flex flex-col lg:h-[400px] lg:flex-row items-center bg-[#1a1a1d] rounded-lg shadow-md overflow-hidden"
-//           >
-//             {/* Left Section: Image */}
-//             <div className="w-full h-full lg:w-1/2">
-//               <img
-//                 src={project.imageURL}
-//                 alt={project.title}
-//                 className="w-full h-full object-cover"
-//               />
-//             </div>
-
-//             {/* Right Section: Details */}
-//             <div className="p-6 text-white w-full md:w-1/2">
-//               <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
-//               <p className="text-sm text-gray-300 mb-4">
-//                 {project.description}
-//               </p>
-
-//               <div className="flex flex-wrap gap-2 mb-4">
-//                 {project.details.techStack.map((tech, idx) => (
-//                   <span
-//                     key={idx}
-//                     className="bg-[#ff5c8d] text-white text-xs px-3 py-1 rounded-full"
-//                   >
-//                     {tech}
-//                   </span>
-//                 ))}
-//               </div>
-
-//               <div className="mb-4">
-//                 <h4 className="text-lg font-semibold text-[#ff5c8d]">
-//                   Challenges Faced:
-//                 </h4>
-//                 <ul className="list-disc list-inside text-gray-300 text-sm">
-//                   {project.details.challengesFaced.map((challenge, idx) => (
-//                     <li key={idx}>{challenge}</li>
-//                   ))}
-//                 </ul>
-//               </div>
-
-//               <div className="mb-4">
-//                 <h4 className="text-lg font-semibold text-[#ff5c8d]">
-//                   Improvements:
-//                 </h4>
-//                 <ul className="list-disc list-inside text-gray-300 text-sm">
-//                   {project.details.improvements.map((improvement, idx) => (
-//                     <li key={idx}>{improvement}</li>
-//                   ))}
-//                 </ul>
-//               </div>
-
-//               <div className="flex gap-4">
-//                 <a
-//                   href={project.liveLink}
-//                   target="_blank"
-//                   rel="noopener noreferrer"
-//                   className="text-[#ff5c8d] font-medium hover:underline"
-//                 >
-//                   Live Site
-//                 </a>
-//                 <a
-//                   href={project.githubLink_client_side}
-//                   target="_blank"
-//                   rel="noopener noreferrer"
-//                   className="text-[#ff5c8d] font-medium hover:underline"
-//                 >
-//                   Client Code
-//                 </a>
-//                 {project.githubLink_server_side && (
-//                   <a
-//                     href={project.githubLink_server_side}
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                     className="text-[#ff5c8d] font-medium hover:underline"
-//                   >
-//                     Server Code
-//                   </a>
-//                 )}
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-
-//       {/* Load More Button */}
-//       {visibleProjects < projects.length && (
-//         <div className="text-center mt-8">
-//           <button
-//             onClick={() => setVisibleProjects(visibleProjects + 6)}
-//             className="bg-[#ff5c8d] text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-[#c772f0] transition"
-//           >
-//             Load More
-//           </button>
-//         </div>
-//       )}
-//     </div>
-//    </div>
-
-//   );
-// };
-
-// export default FullStackProjects;
-
-
-
-
-import React, { useEffect, useState } from "react";
-import {
+  
+  import Aos from "aos";
+  import "aos/dist/aos.css";
+  
+  import React, { useEffect, useState } from "react";
+  import {
   Button,
   Dialog,
   DialogHeader,
@@ -143,6 +18,11 @@ const FullStackProjects = () => {
   const [selectedProject, setSelectedProject] = useState(null); // To store the selected project's details
   const [isModalOpen, setIsModalOpen] = useState(false); // Modal state
 
+
+  useEffect(() => {
+    console.log("Initializing AOS");
+    Aos.init({ duration: 1000, once: true });
+  }, []);
   useEffect(() => {
     // Fetch the JSON file
     fetch("./fullstack.json")
@@ -161,7 +41,7 @@ const FullStackProjects = () => {
   };
 
   return (
-    <div className="bg-[#111111]">
+    <div id="projects" className="bg-[#111111]">
       <div className="w-full py-10 px-6 md:w-10/12 mx-auto">
         <h2 className="text-4xl md:text-5xl text-white text-center font-bold py-20">
           Full-Stack <span className="text-[#ff5c8d]">Projects</span>
@@ -169,9 +49,12 @@ const FullStackProjects = () => {
 
         <div className="space-y-8">
           {projects.slice(0, visibleProjects).map((project, index) => (
-            <div
+           <div className="hover:shadow-[#ff5c8d] bg-[#1a1a1d] hover:scale-105 hover:shadow-lg transition-all duration-75 rounded-xl">
+             <div
+             data-aos="fade-up"
+             data-aos-anchor-placement="center-bottom"
               key={index}
-              className="flex flex-col  lg:flex-row  items-center bg-[#1a1a1d] rounded-lg shadow-md overflow-hidden"
+              className="flex flex-col  lg:flex-row  items-center bg-[#1a1a1d] rounded-xl  overflow-hidden"
             >
               {/* Left Section: Image */}
               <div className="w-full h-full lg:w-1/2">
@@ -247,6 +130,7 @@ const FullStackProjects = () => {
 
               </div>
             </div>
+           </div>
           ))}
         </div>
 

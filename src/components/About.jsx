@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Lottie from "lottie-react";
 import animationData from "../../public/about.json"; // Replace with your Lottie animation JSON
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
-  return (
-    <div className="flex flex-col md:flex-row justify-between items-center bg-[#111111] text-white  px-8 md:px-16 py-24">
 
-<div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
+
+  return (
+    <div 
+  
+    id="about" className="flex flex-col md:flex-row justify-between items-center bg-[#111111] text-white  px-8 md:px-16 py-24">
+
+    <div 
+      data-aos="zoom-in"
+    className="md:w-1/2 flex justify-center mt-8 md:mt-0">
         <Lottie animationData={animationData} loop={true} className="w-80 md:w-96" />
       </div>
       {/* Left Section: Text */}
-      <div className="md:w-1/2 space-y-6">
+      <div 
+        data-aos="zoom-in"
+      className="md:w-1/2 space-y-6">
         <h2 className="text-4xl md:text-5xl font-bold">
           About <span className="text-[#ff5c8d]">Me</span>
         </h2>

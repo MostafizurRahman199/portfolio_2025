@@ -5,7 +5,7 @@ import { Carousel, Spinner } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Aos from "aos";
-import profile from "../../public/me.jpg"; 
+import profile from "../../public/me2.png"; 
 import { Typewriter } from "react-simple-typewriter";
 
 export default function AnimationBanner() {
@@ -34,7 +34,7 @@ export default function AnimationBanner() {
   }, []);
 
   return (
-    <div className="h-[600px] md:h-[700px] bg-[#111111] py-32">
+    <div id="home" className=" h-[600px] md:h-[700px] bg-[#111111] py-32">
       <div className="relative h-full w-full flex flex-col gap-8 md:flex-row justify-between md:px-4">
         {/* Left Section: Text */}
         <div className="flex-1 flex flex-col justify-center items-center w-11/12 mx-auto h-full gap-12 md:gap-8">
@@ -112,7 +112,7 @@ export default function AnimationBanner() {
             <button
                 onClick={handleDownload}
                 disabled={isLoading}
-                className={`font_body text-2xl px-6 py-3 ${
+                className={`font_body text-lg md:text-2xl px-4 md:px-6 py-2 md:py-3 ${
                   isLoading ? "bg-gray-500 cursor-not-allowed" : "bg-[#ff5c8d]"
                 } text-white font-semibold rounded-md shadow-md ${
                   isLoading ? "" : "hover:bg-[#c772f0]"
@@ -131,7 +131,7 @@ export default function AnimationBanner() {
           <div className="flex justify-center items-center gap-6 mt-4">
             {/* GitHub */}
             <a
-              href="https://github.com"
+              href="https://github.com/MostafizurRahman199"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 transition-transform transform hover:scale-110"
@@ -144,7 +144,7 @@ export default function AnimationBanner() {
             </a>
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/md-mostafizur-rahman-78bb511a4/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 transition-transform transform hover:scale-110"
@@ -157,7 +157,7 @@ export default function AnimationBanner() {
             </a>
             {/* Facebook */}
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/shifat.199"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 transition-transform transform hover:scale-110"
@@ -170,7 +170,7 @@ export default function AnimationBanner() {
             </a>
             {/* X (Twitter) */}
             <a
-              href="https://twitter.com"
+              href="https://x.com/Fardilshifat"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 transition-transform transform hover:scale-110"

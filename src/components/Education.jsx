@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaUniversity, FaSchool } from "react-icons/fa";
 import { MdOutlineSchool } from "react-icons/md";
 import Lottie from "lottie-react";
 import educationAnimation from "../../public/education.json"; // Replace with your Lottie file
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 const Education = () => {
   const educationData = [
@@ -32,8 +35,14 @@ const Education = () => {
     },
   ];
 
+
+  useEffect(() => {
+    console.log("Initializing AOS");
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div className="flex flex-col items-center bg-[#111111] text-white py-16 px-8 md:px-16">
+    <div id="education"  className="flex flex-col items-center bg-[#111111] text-white py-16 px-8 md:px-16">
       {/* Title */}
       <h2 className="text-4xl md:text-5xl font-bold mb-12">
         <span className="text-[#ff5c8d]">Education</span> Journey
@@ -42,11 +51,14 @@ const Education = () => {
       {/* Content */}
       <div className="flex flex-col-reverse md:flex-row items-center gap-16">
         {/* Left Section: Education List */}
-        <div className="md:w-1/2 space-y-8">
+        <div 
+         data-aos="fade-right"
+        className="md:w-1/2 space-y-8">
           {educationData.map((item) => (
+            
             <div
               key={item.id}
-              className="flex items-center gap-6 bg-[#1a1a1d] p-6 rounded-lg shadow-lg hover:shadow-xl transition"
+              className="hover:shadow-[#ff5c8d] hover:scale-105 hover:shadow-lg transition-all duration-75 flex items-center gap-6 bg-[#1a1a1d] p-6 rounded-lg "
             >
               {/* Icon */}
               <div className="flex-shrink-0">{item.icon}</div>

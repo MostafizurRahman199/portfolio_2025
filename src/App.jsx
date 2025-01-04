@@ -13,6 +13,8 @@ import About from './components/About'
 import Education from './components/Education'
 import FullStackProjects from './components/FullStackProjects'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
+import Experience from './components/Experience'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,11 +27,13 @@ function App() {
     <About></About>
     <Skills></Skills>
     <Education></Education>
+    <Experience></Experience>
     <FullStackProjects></FullStackProjects>
     <ReactProject></ReactProject>
     <FrontEndProject></FrontEndProject>
     <Contact></Contact>
-    <Profile> </Profile>
+    {/* <Profile> </Profile> */}
+    <Footer></Footer>
    </div>
   )
 }
