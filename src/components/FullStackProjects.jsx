@@ -163,7 +163,7 @@ const FullStackProjects = () => {
   return (
     <div className="bg-[#111111]">
       <div className="w-full py-10 px-6 md:w-10/12 mx-auto">
-        <h2 className="text-4xl md:text-5xl text-white text-center font-bold mb-8">
+        <h2 className="text-4xl md:text-5xl text-white text-center font-bold py-20">
           Full-Stack <span className="text-[#ff5c8d]">Projects</span>
         </h2>
 

@@ -36,13 +36,15 @@ const ReactProject = () => {
   };
 
   return (
-    <div className="w-full bg-[#000000] ">
-      <div className="w-10/12 mx-auto min-h-screen p-8 ">
-        <h2 className="text-[#E5E5E5] text-3xl font-bold mb-8 ">React Projects</h2>
+    <div className="w-full bg-[#111111] py-20">
+      <div className="w-10/12 mx-auto p">
+      <h2 className="text-4xl md:text-5xl text-white text-center font-bold py-20 ">
+          React <span className="text-[#ff5c8d]">Projects</span>
+        </h2>
 
         <Slider {...settings}  className="">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card bg-[#1A1A1D]">
+          {projects.map((project, index) => ( 
+            <div key={index} className="project-card bg-[#1A1A1D] ">
               <img
                 src={project.imageURL}
                 alt={project.title}

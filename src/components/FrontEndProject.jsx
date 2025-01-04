@@ -17,9 +17,11 @@ const FrontEndProject = () => {
   };
 
   return (
-    <div className='w-full  bg-[#111111]'>
-        <div className=" min-h-screen p-8 w-10/12 mx-auto">
-      <h2 className="text-[#E5E5E5] text-3xl font-bold mb-8">Frontend Projects</h2>
+    <div className='w-full  bg-[#111111] py-20'>
+        <div className=" min-h-screen  w-10/12 mx-auto">
+        <h2 className="text-4xl md:text-5xl text-white text-center font-bold py-20">
+          Front-End <span className="text-[#ff5c8d]">Projects</span>
+        </h2>
 
       {/* Grid layout with 3 columns */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

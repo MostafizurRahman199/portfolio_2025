@@ -1,51 +1,62 @@
 [
   {
-    "title": "Coffee House",
-    "imageURL": "https://c8.alamy.com/comp/W4N9H1/vector-logo-for-coffee-house-W4N9H1.jpg",
-    "description": "A comprehensive Full Stack Express and Node.js project named Coffee House, where users can perform Create, Read, Update, and Delete (CRUD) operations seamlessly. This project also integrates user authentication to ensure secure access.",
-    "liveLink": "https://coffee-house-f229b.web.app/",
-    "githubLink_client_side": "https://github.com/MostafizurRahman199/coffee_house_client",
-    "githubLink_server_side": "https://github.com/MostafizurRahman199/coffee_house_server_side",
+    "title": "Chill Gamer",
+    "imageURL": "https://chillgamerbymostafiz.netlify.app/assets/banner6-Dk_6FdBX.jpeg",
+    "description": "Chill Gamer is a user-friendly game review platform designed to allow users to explore and share game reviews. This project includes user authentication, review management, and dynamic content features.",
+    "liveLink": "https://chillgamerbymostafiz.netlify.app/",
+    "githubLink_client_side": "https://github.com/MostafizurRahman199/Chill_Gamer_client_side_new",
+    "githubLink_server_side": "https://github.com/MostafizurRahman199/Chill_gamer_server_side",
     "details": {
       "techStack": ["React", "Node.js", "Express", "MongoDB", "Firebase"],
-      "briefDescription": "A full-stack application focusing on CRUD operations and user authentication for managing coffee shop services.",
+      "briefDescription": {
+        "overview": "Chill Gamer is a user-friendly game review platform designed to allow users to explore and share game reviews.",
+        "focus": "Provides an intuitive and 'chill' experience for users to engage with game reviews, ratings, and watchlists.",
+        "features": [
+          "User authentication",
+          "Review management",
+          "Dynamic content features"
+        ]
+      },
       "detailedDescription": {
         "layout": {
           "navbar": [
             "Website name/logo",
-            "Home, Menu, Add Coffee (Protected), Update Coffee (Protected)",
+            "Home, All Reviews, Add Review (Protected), My Reviews (Protected), Game Watchlist (Protected)",
             "Login/Register (Conditional)",
             "User Avatar (Profile photo with name tooltip)",
             "Logout (for logged-in users)"
           ],
           "homePage": [
-            "Dynamic banner showcasing coffee collections",
-            "Popular coffee items section",
-            "Quick links to manage coffee inventory"
+            "Dynamic banner/slider",
+            "Highest Rated Games section (6 cards with ratings, 'Explore Details' button)",
+            "2 extra meaningful sections (dynamic data from MongoDB)"
           ],
-          "footer": ["Contact details, social media links, and site map"]
+          "footer": ["Relevant footer information"]
         },
         "keyPages": {
-          "loginPage": "Email/password authentication with Firebase.",
-          "registerPage": "User registration for secure access.",
-          "addCoffeePage": "Allows users to add coffee details (name, price, description, image).",
-          "updateCoffeePage": "Enables users to update existing coffee details.",
-          "menuPage": "Displays all available coffee items dynamically."
+          "loginPage": "Email/password authentication with Google/GitHub login.",
+          "registerPage": "User registration with email, password, and name.",
+          "addReviewPage": "Submit game reviews (game name, cover image, rating, description, etc.).",
+          "reviewDetailsPage": "Displays review details with 'Add to Watchlist' functionality.",
+          "allReviewsPage": "Lists all reviews with sorting/filtering options by rating, year, and genre.",
+          "myReviewsPage": "Shows reviews submitted by the logged-in user with update and delete options.",
+          "updateReviewPage": "Allows users to edit previously submitted reviews.",
+          "gameWatchlistPage": "A private page for users to view/manage games in their personal watchlist."
         },
         "additionalFeatures": {
           "404Page": "Custom 'Not Found' page for invalid URLs.",
-          "loadingSpinner": "Indicates data loading status.",
+          "loadingSpinner": "Displays loading status.",
           "themeToggle": "Dark/Light theme toggle.",
-          "crudOperations": "Full CRUD functionality for managing coffee items."
+          "sortAndFilter": "Sort reviews by rating or year, filter by genres."
         }
       },
       "challengesFaced": [
-        "Integrating Firebase authentication with React and Express.",
-        "Optimizing backend APIs for faster data retrieval."
+        "Handling large data for game reviews efficiently.",
+        "Implementing real-time updates for user interactions."
       ],
       "improvements": [
-        "Adding a real-time order management system.",
-        "Enhancing UI for better customer experience."
+        "Adding a recommendation engine for personalized game suggestions.",
+        "Integrating social sharing features."
       ]
     }
   },
@@ -145,6 +156,56 @@
       "improvements": [
         "Integrating video interview scheduling functionality.",
         "Enhancing the search algorithm for better accuracy."
+      ]
+    }
+  },
+  {
+    "title": "Coffee House",
+    "imageURL": "https://www.sliderrevolution.com/wp-content/uploads/2021/10/Cafenod.jpg",
+    "description": "A comprehensive Full Stack Express and Node.js project named Coffee House, where users can perform Create, Read, Update, and Delete (CRUD) operations seamlessly. This project also integrates user authentication to ensure secure access.",
+    "liveLink": "https://coffee-house-f229b.web.app/",
+    "githubLink_client_side": "https://github.com/MostafizurRahman199/coffee_house_client",
+    "githubLink_server_side": "https://github.com/MostafizurRahman199/coffee_house_server_side",
+    "details": {
+      "techStack": ["React", "Node.js", "Express", "MongoDB", "Firebase"],
+      "briefDescription": "A full-stack application focusing on CRUD operations and user authentication for managing coffee shop services.",
+      "detailedDescription": {
+        "layout": {
+          "navbar": [
+            "Website name/logo",
+            "Home, Menu, Add Coffee (Protected), Update Coffee (Protected)",
+            "Login/Register (Conditional)",
+            "User Avatar (Profile photo with name tooltip)",
+            "Logout (for logged-in users)"
+          ],
+          "homePage": [
+            "Dynamic banner showcasing coffee collections",
+            "Popular coffee items section",
+            "Quick links to manage coffee inventory"
+          ],
+          "footer": ["Contact details, social media links, and site map"]
+        },
+        "keyPages": {
+          "loginPage": "Email/password authentication with Firebase.",
+          "registerPage": "User registration for secure access.",
+          "addCoffeePage": "Allows users to add coffee details (name, price, description, image).",
+          "updateCoffeePage": "Enables users to update existing coffee details.",
+          "menuPage": "Displays all available coffee items dynamically."
+        },
+        "additionalFeatures": {
+          "404Page": "Custom 'Not Found' page for invalid URLs.",
+          "loadingSpinner": "Indicates data loading status.",
+          "themeToggle": "Dark/Light theme toggle.",
+          "crudOperations": "Full CRUD functionality for managing coffee items."
+        }
+      },
+      "challengesFaced": [
+        "Integrating Firebase authentication with React and Express.",
+        "Optimizing backend APIs for faster data retrieval."
+      ],
+      "improvements": [
+        "Adding a real-time order management system.",
+        "Enhancing UI for better customer experience."
       ]
     }
   }

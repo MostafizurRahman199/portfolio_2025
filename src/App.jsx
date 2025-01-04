@@ -12,6 +12,7 @@ import AnimationBanner from './components/AnimationBanner'
 import About from './components/About'
 import Education from './components/Education'
 import FullStackProjects from './components/FullStackProjects'
+import Contact from './components/Contact'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,8 +26,9 @@ function App() {
     <Skills></Skills>
     <Education></Education>
     <FullStackProjects></FullStackProjects>
-    <FrontEndProject></FrontEndProject>
     <ReactProject></ReactProject>
+    <FrontEndProject></FrontEndProject>
+    <Contact></Contact>
     <Profile> </Profile>
    </div>
   )
