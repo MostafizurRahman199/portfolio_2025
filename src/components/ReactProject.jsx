@@ -48,8 +48,8 @@ const ReactProject = () => {
             clickable: true,
           }}
           navigation={{
-            prevEl: '.swiper-button-prev',
-            nextEl: '.swiper-button-next',
+            prevEl: '.prev',
+            nextEl: '.next',
           }}
           breakpoints={{
             640: {
@@ -94,7 +94,7 @@ const ReactProject = () => {
 
         {/* Navigation buttons below the cards */}
         <div className="flex justify-center gap-4 mt-6">
-          <button className="  text-[#ff5c8d] p-2 rounded-full">
+          <button className="prev  text-[#ff5c8d] p-2 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -110,7 +110,7 @@ const ReactProject = () => {
               />
             </svg>
           </button>
-          <button className="  text-[#ff5c8d] p-2 rounded-full">
+          <button className="next  text-[#ff5c8d] p-2 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
