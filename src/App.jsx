@@ -17,12 +17,11 @@ import Footer from './components/Footer'
 import Experience from './components/Experience'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
    <div>
     <Navbar></Navbar>
-    {/* <Banner></Banner> */}
     <AnimationBanner></AnimationBanner>
     <About></About>
     <Skills></Skills>
@@ -32,7 +31,6 @@ function App() {
     <ReactProject></ReactProject>
     <FrontEndProject></FrontEndProject>
     <Contact></Contact>
-    {/* <Profile> </Profile> */}
     <Footer></Footer>
    </div>
   )

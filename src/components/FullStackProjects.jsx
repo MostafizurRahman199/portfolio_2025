@@ -20,7 +20,7 @@ const FullStackProjects = () => {
 
 
   useEffect(() => {
-    console.log("Initializing AOS");
+    // console.log("Initializing AOS");
     Aos.init({ duration: 1000, once: true });
   }, []);
   useEffect(() => {
@@ -49,11 +49,11 @@ const FullStackProjects = () => {
 
         <div className="space-y-8">
           {projects.slice(0, visibleProjects).map((project, index) => (
-           <div className="hover:shadow-[#ff5c8d] bg-[#1a1a1d] hover:scale-105 hover:shadow-lg transition-all duration-75 rounded-xl">
+           <div  key={index} className="hover:shadow-[#ff5c8d] bg-[#1a1a1d] hover:scale-105 hover:shadow-lg transition-all duration-75 rounded-xl">
              <div
              data-aos="fade-up"
              data-aos-anchor-placement="center-bottom"
-              key={index}
+             
               className="flex flex-col  lg:flex-row  items-center bg-[#1a1a1d] rounded-xl  overflow-hidden"
             >
               {/* Left Section: Image */}
@@ -66,7 +66,7 @@ const FullStackProjects = () => {
               </div>
 
               {/* Right Section: Details */}
-              <div className="p-6 flex flex-col justify-around h-full text-white w-full md:w-1/2">
+              <div className=" p-6 flex flex-col justify-around h-full text-white w-full lg:w-1/2">
              
              <div className="flex flex-col gap-2">
              <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>

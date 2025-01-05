@@ -15,7 +15,7 @@ const Contact = () => {
   });
 
   useEffect(() => {
-    console.log("Initializing AOS");
+    // console.log("Initializing AOS");
     Aos.init({ duration: 1000 });
   }, []);
 
@@ -69,7 +69,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="bg-[#111111] text-white py-16 px-6 md:px-24">
+    <div id="contact" className="bg-[#111111] text-white py-16 px-2  sm:px-6 md:px-24">
       <h2 className="text-4xl md:text-5xl text-center font-bold mb-12">
         Get in <span className="text-[#ff5c8d]">Touch</span>
       </h2>
@@ -77,8 +77,8 @@ const Contact = () => {
       <div className="flex flex-col-reverse lg:flex-row-reverse lg:grid lg:grid-cols-2 gap-12 ">
         {/* Left: Form */}
         <div
-          data-aos="zoom-out"
-          className=" bg-[#1a1a1d] p-12 rounded-[30px] shadow-md"
+          data-aos="zoom-in"
+          className=" bg-[#1a1a1d] p-8 md:p-12 rounded-[30px] shadow-md"
         >
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>

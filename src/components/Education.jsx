@@ -37,7 +37,7 @@ const Education = () => {
 
 
   useEffect(() => {
-    console.log("Initializing AOS");
+    // console.log("Initializing AOS");
     Aos.init({ duration: 1000 });
   }, []);
 
