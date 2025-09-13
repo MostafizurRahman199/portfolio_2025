@@ -276,7 +276,8 @@ const Skills = () => {
                         <h3 className="text-xl font-semibold mb-4 text-white">Database</h3>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div className="bg-gray-600 text-white p-4 rounded  transition-all duration-500 hover:scale-y-105 hover:scale-x-105">MySQL</div>
-                            <div className="bg-gray-700 text-white p-4 rounded transition-all duration-500 hover:scale-y-105 hover:scale-x-105">MongoDB</div>
+                            <div className="bg-green-700 text-white p-4 rounded transition-all duration-500 hover:scale-y-105 hover:scale-x-105">MongoDB</div>
+                            <div className="bg-blue-600 text-white p-4 rounded transition-all duration-500 hover:scale-y-105 hover:scale-x-105">PostgreSQL</div>
                         </div>
                     </div>
     

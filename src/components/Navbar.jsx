@@ -14,20 +14,19 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleDownload = (event) => {
-    event.preventDefault(); // Prevent default navigation
-    setIsLoading(true);
-    const link = document.createElement("a");
-    link.href =
-      "https://drive.google.com/uc?export=download&id=1oDDf2DIQJVCBku822nwQiQkgy2oN9GJ4";
-    link.download = "Resume.pdf"; // Name of the file to download
-    link.click();
+  const handleDownload = () => {
+  setIsLoading(true);
 
-    // Simulate loading state for 2 seconds
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000); // Simulates a 2-second delay
-  };
+  const link = document.createElement("a");
+  link.href = "https://drive.google.com/uc?export=download&id=1TX8gLape-1y5mohqWIxH3zqtyJCfDW66";
+  link.download = "Resume.pdf"; // Name of the file
+  link.click();
+
+  // Simulate loading state
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 3000);
+};
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

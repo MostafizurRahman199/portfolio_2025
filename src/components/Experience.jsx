@@ -12,6 +12,28 @@ const Experience = () => {
 
   const experiences = [
     {
+      role: "Software Engineer",
+      company: "Bulipe Tech Limited",
+      date: "15-06-2025 - Current",
+      description: [
+        "Architect and develop full-stack web applications using the MERN stack (MongoDB, Express.js, React, Node.js).",
+        "Build responsive and user-centric interfaces with a focus on performance and scalability.",
+        "Collaborate cross-functionally with designers, product managers, and QA to deliver high-impact features.",
+      ],
+      icon: <FaBriefcase className="text-5xl text-[#ff5c8d]" />,
+    }
+    ,
+    {
+      role: "Interactive Media Programmer/Developer",
+      company: "Bikroy",
+      date: "01-02-2025 - 01-06-2025",
+      description: [
+        "Design and implement interactive media solutions for web platforms.",
+        "Develop and maintain front-end and back-end components using the MERN stack (MongoDB Express.js React Node.js)"
+      ],
+      icon: <FaBriefcase className="text-5xl text-[#ff5c8d]" />,
+    },
+    {
       role: "Front-End Engineer (Intern)",
       company: "iTransition (Remote)",
       date: "01-04-2024 - 01-07-2024",
@@ -25,7 +47,7 @@ const Experience = () => {
     {
       role: "Undergraduate Assistant",
       company: "United International University",
-      date: "01-01-2024 - 01-07-2024",
+      date: "01-01-2024 - 04-06-2024",
       description: [
         "Boosted students' confidence in their abilities through continuous positive reinforcement.",
         "Improved critical thinking skills by incorporating problem-solving activities.",
@@ -34,17 +56,7 @@ const Experience = () => {
       ],
       icon: <FaUniversity className="text-5xl text-[#ff5c8d]" />,
     },
-    {
-      role: "Center for International Affairs and Cooperation (CIAC)",
-      company: "United International University",
-      date: "01-02-2022 - Current",
-      description: [
-        "Facilitated international exposure for students, faculty, and staff.",
-        "Promoted cross-cultural diversity and global learning opportunities.",
-        "Organized events and programs to enhance global collaboration.",
-      ],
-      icon: <MdIntegrationInstructions className="text-7xl text-[#ff5c8d]" />,
-    },
+   
   ];
 
   return (

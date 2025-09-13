@@ -12,19 +12,37 @@ export default function AnimationBanner() {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleDownload = () => {
-    setIsLoading(true);
-    const link = document.createElement("a");
-    link.href =
-      "https://drive.google.com/uc?export=download&id=1oDDf2DIQJVCBku822nwQiQkgy2oN9GJ4";
-    link.download = "Resume.pdf"; // Name of the file to download
-    link.click();
+  // const handleDownload = () => {
+  //   setIsLoading(true);
+  //   const link = document.createElement("a");
+  //   link.href =
+  //     "https://drive.google.com/uc?export=download&id=1oDDf2DIQJVCBku822nwQiQkgy2oN9GJ4";
 
-    // Simulate loading state for 2 seconds
-    setTimeout(() => {
-      setIsLoading(false);
-      }, 3000); // Simulates a 2-second delay
-  };
+  //     "https://drive.google.com/file/d/1TX8gLape-1y5mohqWIxH3zqtyJCfDW66/view?usp=sharing"
+
+  //   link.download = "Resume.pdf"; // Name of the file to download
+  //   link.click();
+
+  //   // Simulate loading state for 2 seconds
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //     }, 3000); // Simulates a 2-second delay
+  // };
+
+
+const handleDownload = () => {
+  setIsLoading(true);
+
+  const link = document.createElement("a");
+  link.href = "https://drive.google.com/uc?export=download&id=1TX8gLape-1y5mohqWIxH3zqtyJCfDW66";
+  link.download = "Resume.pdf"; // Name of the file
+  link.click();
+
+  // Simulate loading state
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 3000);
+};
 
 
 
