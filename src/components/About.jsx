@@ -29,7 +29,7 @@ const About = () => {
           About <span className="text-[#ff5c8d]">Me</span>
         </h2>
         <p className="text-lg md:text-xl leading-relaxed">
-          Hello! I'm a <span className="text-[#ff5c8d]">Computer Science graduate</span> with a fervent passion for coding, particularly within the realm of <span className="text-[#ff5c8d]">web programming</span>. I thrive on creating digital experiences that are not only visually appealing but also highly functional and efficient.
+          Hello! I'm a <span className="text-[#ff5c8d]">Software Engineer</span> with a fervent passion for coding, particularly within the realm of <span className="text-[#ff5c8d]">web programming</span>. I thrive on creating digital experiences that are not only visually appealing but also highly functional and efficient.
         </p>
         <p className="text-lg md:text-xl leading-relaxed">
           My expertise lies in <span className="text-[#ff5c8d]">React.js</span>, <span className="text-[#ff5c8d]">JavaScript</span>, and <span className="text-[#ff5c8d]">Node.js</span>. I enjoy translating complex problems into elegant solutions, constantly pushing myself to stay updated with the latest trends and technologies.

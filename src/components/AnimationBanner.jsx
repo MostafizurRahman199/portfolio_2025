@@ -12,23 +12,6 @@ export default function AnimationBanner() {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  // const handleDownload = () => {
-  //   setIsLoading(true);
-  //   const link = document.createElement("a");
-  //   link.href =
-  //     "https://drive.google.com/uc?export=download&id=1oDDf2DIQJVCBku822nwQiQkgy2oN9GJ4";
-
-  //     "https://drive.google.com/file/d/1TX8gLape-1y5mohqWIxH3zqtyJCfDW66/view?usp=sharing"
-
-  //   link.download = "Resume.pdf"; // Name of the file to download
-  //   link.click();
-
-  //   // Simulate loading state for 2 seconds
-  //   setTimeout(() => {
-  //     setIsLoading(false);
-  //     }, 3000); // Simulates a 2-second delay
-  // };
-
 
 const handleDownload = () => {
   setIsLoading(true);
@@ -74,11 +57,11 @@ const handleDownload = () => {
               <span style={{ color: "#c772f0", fontWeight: "bold" }}>
                 <Typewriter
                   words={[
-                    "Web Developer",
+                    "Software Engineer",
                     "CSE Graduate",
                     "Problem Solver",
                     "Tech Enthusiast",
-                    "Web Developer",
+                    "Software Engineer",
                   ]}
                   loop={5}
                   cursor
@@ -91,43 +74,13 @@ const handleDownload = () => {
             </motion.span>
           </motion.h1>
 
-          {/* <motion.p
-            animate={{ opacity: [0.9, 1, 0.9] }}
-            transition={{
-              duration: 5,
-              ease: "easeInOut",
-              repeat: Infinity,
-            }}
-            className="text-center text-lg md:text-2xl text-white"
-          >
-            Crafting modern, responsive, and user-friendly websites to elevate
-            your digital presence.
-          </motion.p> */}
-
-          {/* Resume Button */}
-        
 
           {/* Social Media Links */}
           <div className="flex flex-col gap-8">
-          <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-4">
             
-            {/* <a
-              href="https://drive.google.com/file/d/1oDDf2DIQJVCBku822nwQiQkgy2oN9GJ4/view?usp=sharing" // Replace with your resume file path
-              download
-              className="font_body text-2xl px-6 py-3 bg-[#ff5c8d] text-white font-semibold rounded-md shadow-md hover:bg-[#c772f0] transition"
-            >
-              Download Resume
-            </a> */}
-
-            {/* <a
-
-              href="https://drive.google.com/uc?export=download&id=1oDDf2DIQJVCBku822nwQiQkgy2oN9GJ4" // Direct download link
-              className="font_body text-2xl px-6 py-3 bg-[#ff5c8d] text-white font-semibold rounded-md shadow-md hover:bg-[#c772f0] transition"
-            >
-              Download Resume
-            </a> */}
-
-            <button
+    
+              <button
                 onClick={handleDownload}
                 disabled={isLoading}
                 className={`font_body text-lg md:text-2xl px-4 md:px-6 py-2 md:py-3 ${
@@ -137,77 +90,69 @@ const handleDownload = () => {
                 } transition flex items-center justify-center`}
               >
                 {isLoading ? (
-                   <span className="flex items-center gap-2"><p>Downloading</p> <Spinner color="pink" /></span> 
+                  <span className="flex items-center gap-2">
+                    <p>Downloading</p> <Spinner color="pink" />
+                  </span>
                 ) : (
                   "Download Resume"
                 )}
               </button>
-
-
-
+            </div>
+            <div className="flex justify-center items-center gap-6 mt-4">
+              {/* GitHub */}
+              <a
+                href="https://github.com/MostafizurRahman199"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 transition-transform transform hover:scale-110"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+                  alt="GitHub"
+                  className="w-full h-full object-cover"
+                />
+              </a>
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/md-mostafizur-rahman-78bb511a4/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 transition-transform transform hover:scale-110"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                  alt="LinkedIn"
+                  className="w-full h-full object-cover"
+                />
+              </a>
+              {/* Facebook */}
+              <a
+                href="https://www.facebook.com/shifat.199"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 transition-transform transform hover:scale-110"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                  alt="Facebook"
+                  className="w-full h-full object-cover"
+                />
+              </a>
+              {/* X (Twitter) */}
+              <a
+                href="https://x.com/Fardilshifat"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 transition-transform transform hover:scale-110"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                  alt="X"
+                  className="w-full h-full object-cover"
+                />
+              </a>
+            </div>
           </div>
-          <div className="flex justify-center items-center gap-6 mt-4">
-            {/* GitHub */}
-            <a
-              href="https://github.com/MostafizurRahman199"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 transition-transform transform hover:scale-110"
-            >
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
-                alt="GitHub"
-                className="w-full h-full object-cover"
-              />
-            </a>
-            {/* LinkedIn */}
-            <a
-              href="https://www.linkedin.com/in/md-mostafizur-rahman-78bb511a4/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 transition-transform transform hover:scale-110"
-            >
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                alt="LinkedIn"
-                className="w-full h-full object-cover"
-              />
-            </a>
-            {/* Facebook */}
-            <a
-              href="https://www.facebook.com/shifat.199"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 transition-transform transform hover:scale-110"
-            >
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
-                alt="Facebook"
-                className="w-full h-full object-cover"
-              />
-            </a>
-            {/* X (Twitter) */}
-            <a
-              href="https://x.com/Fardilshifat"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 transition-transform transform hover:scale-110"
-            >
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
-                alt="X"
-                className="w-full h-full object-cover"
-              />
-            </a>
-
-         
-          </div>
-
-        
-
-
-          </div>
-        
         </div>
 
         {/* Right Section: Profile Image */}
@@ -222,11 +167,7 @@ const handleDownload = () => {
               }}
               className="relative rounded-full overflow-hidden border-8 border-white w-56 h-56 md:w-96 md:h-96"
             >
-              <img
-                src={profile}
-                alt="Profile"
-                className="w-full h-full object-cover"
-              />
+              <img src={profile} alt="Profile" className="w-full h-full object-cover" />
             </motion.div>
           </div>
         </div>
