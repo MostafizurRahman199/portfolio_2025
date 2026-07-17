@@ -339,6 +339,88 @@
     }
   },
   {
+    "title": "WalletHub - Digital Wallet & Payment System",
+    "imageURL": "images/wallet.png",
+    "description": "WalletHub is a comprehensive digital wallet and payment processing system that enables users to manage finances, make transactions, and allow agents to facilitate cash operations, featuring role-based access and secure payment gateway integration.",
+    "liveLink": "https://strong-madeleine-a25609.netlify.app/",
+    "githubLink_client_side": "https://github.com/MostafizurRahman199/wallet-frontend",
+    "githubLink_server_side": "https://github.com/MostafizurRahman199/digital_wallet",
+    "details": {
+      "techStack": [
+        "React (Vite)",
+        "TailwindCSS",
+        "TypeScript",
+        "Redux Toolkit",
+        "Node.js",
+        "Express.js",
+        "JWT",
+        "SSLCommerz",
+        "Formik",
+        "Yup",
+        "Framer Motion",
+        "Chart.js"
+      ],
+      "briefDescription": {
+        "overview": "WalletHub is a comprehensive digital wallet and payment processing system with multi-role support (User, Agent, Admin).",
+        "focus": "Enables seamless financial transactions, secure top-ups, agent commission tracking, and powerful administrative controls.",
+        "features": [
+          "Secure top-up using SSL Commerz",
+          "Peer-to-peer money transfers and cash withdrawals",
+          "Agent services with commission tracking and cash-in capabilities",
+          "Comprehensive admin dashboard for system-wide control",
+          "Role-based access control and JWT authentication"
+        ]
+      },
+      "detailedDescription": {
+        "layout": {
+          "navbar": [
+            "WalletHub logo & Brand name",
+            "Dashboard navigation (Home, Transactions, Send Money, Cash Out, Cash In)",
+            "User profile and role indicator (User, Agent, Admin)",
+            "Dynamic wallet balance display",
+            "Secure logout button"
+          ],
+          "homePage": [
+            "Dynamic digital wallet banner and stats display",
+            "Quick access buttons for primary wallet actions",
+            "Recent transactions overview feed",
+            "Role-specific quick-action panels"
+          ],
+          "footer": [
+            "Secure transaction assurance notice",
+            "Contact & Support information",
+            "Links to Privacy Policy and terms of service"
+          ]
+        },
+        "keyPages": {
+          "loginPage": "Secure credential verification with JWT token storage.",
+          "registerPage": "Register as User or Agent with role selection and data validation.",
+          "dashboard": "Role-specific interface displaying balance, analytics charts, and transaction feeds.",
+          "sendMoneyPage": "P2P transfer form with user verification, fee calculation, and transaction history.",
+          "topUpPage": "Secure SSL Commerz gateway integration for adding money.",
+          "cashOutPage": "Allows users to withdraw money securely through registered agents.",
+          "agentCashInPage": "Enables agents to transfer funds into user accounts.",
+          "adminDashboard": "System statistics overview, user blocking, agent approvals, and system-wide controls."
+        },
+        "additionalFeatures": {
+          "404Page": "Custom error page for invalid paths.",
+          "loadingSpinner": "Real-time loader for API requests and payment validation.",
+          "notifications": "Dynamic toast notification for transactions and authentication status.",
+          "driverTour": "Interactive tour guide using Driver.js to showcase digital wallet features."
+        }
+      },
+      "challengesFaced": [
+        "Implementing secure multi-role access control matching backend JWT verification.",
+        "Integrating SSL Commerz sandbox payment flow and validating callbacks securely.",
+        "Designing transaction history feeds with dynamic calculation of agent commission and user fees."
+      ],
+      "improvements": [
+        "Adding two-factor authentication (2FA) for extra security during transfers.",
+        "Implementing QR code scanning for quick peer-to-peer transfers and cash-ins."
+      ]
+    }
+  },
+  {
     "title": "Coffee House",
     "imageURL": "https://www.sliderrevolution.com/wp-content/uploads/2021/10/Cafenod.jpg",
     "description": "A comprehensive Full Stack Express and Node.js project named Coffee House, where users can perform Create, Read, Update, and Delete (CRUD) operations seamlessly. This project also integrates user authentication to ensure secure access.",
