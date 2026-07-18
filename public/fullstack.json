@@ -293,7 +293,7 @@
     "title": "Job Seeker",
     "imageURL": "https://img.freepik.com/premium-vector/job-seeker-illustration-concept_225067-151.jpg",
     "description": "A Full Stack Job-Seeking Website designed to streamline the process of connecting job seekers with potential employers.",
-    "liveLink": "https://job-seeker-by-mostafiz.netlify.app/",
+    "liveLink": "https://jobseeker-beryl-eight.vercel.app/",
     "githubLink_client_side": "https://github.com/MostafizurRahman199/job_seeker",
     "githubLink_server_side": "https://github.com/MostafizurRahman199/job_seeker_server_side",
     "details": {
